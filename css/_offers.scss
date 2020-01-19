@@ -1,0 +1,124 @@
+.offers {
+    background-color: #363233;
+    position: relative;
+    padding: 50px 0 0 0;
+    h2 {
+        span {
+            border-bottom: 1px solid $burger-color;
+        }
+      
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        height: 200px;
+        background-size: cover;
+        background-image: url(../img/whitebg.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+.offers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+    text-align: center;
+    width: 100%;
+
+    &__item {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #3F3C3F;
+        max-width: 320px;
+        border-radius: 10px;
+        flex-basis: 33.333%;
+        height: 100%;
+        position: relative;
+        margin-top: 25px;
+        box-shadow: 0 5px 2px 4px rgba(0, 0, 0, 0.048);
+
+        
+
+        h4 {
+            background-color: $burger-color;
+            width: 100%;
+            padding: 10px 0;
+            position: relative;
+            z-index: 25;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        p {
+            position: relative;
+            z-index: 2;
+            padding: 65px 0 150px;
+            background-image: url(../img/offers/cyber-secur.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+            height: 100%;
+            &:before {
+                content: '';
+                position: absolute;
+                z-index: 1;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                top: 0;
+                background-color: rgba(63, 60, 63, 0.623);
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+    
+            }
+
+            span {
+                position: relative;
+                z-index: 30;
+                color: #fff;
+            }
+
+            a {
+                display: block;
+                margin: 0 auto;
+                position: absolute;
+                z-index: 30;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                border: 1px solid $burger-color;
+                max-width: 160px;
+                padding: 5px 0;
+                margin-bottom: 20px;
+                border-radius: 5px;
+
+                span {
+                    color: $burger-color;
+                }
+            }
+
+
+        }
+    }
+}
+@media (max-width:992px) {
+    .offers-container {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 -8px;
+        &__item {
+            margin: 25px 8px;
+        }
+    }
+}
