@@ -27,7 +27,8 @@
     }
     &__text p:first-child {
         border-top: 1px solid $burger-color;
-        padding-top: 2em;
+        margin-top: 25px;
+        padding-top: 25px;
         letter-spacing: .8px;
         line-height: 1.5;
     }
