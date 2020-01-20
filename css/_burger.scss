@@ -1,7 +1,7 @@
 
 //variables
 $burger-color: rgb(39, 174, 95);
-$plashka-bgc: rgba(0, 0, 0, 0.959);
+$plashka-bgc: rgba(0, 0, 0, 0.5);
 $active-bgc: rgba(0, 0, 0, 0.500);
 $link-color: rgba(255, 255, 255, 0.853);
 $link-hover: rgba(39, 174, 95, 0.904);
@@ -168,6 +168,13 @@ $link-hover: rgba(39, 174, 95, 0.904);
         padding: 3% 10px;
         text-align: center;
         margin-right: 10px;
+        transition: all .5s;
+        &:hover {
+            border: 1px solid rgba(255, 255, 255, 0.493);
+            color: rgb(39, 174, 95);
+            box-shadow: 0 0 4px 2px rgba(39, 174, 95, 0.322);
+            background-color: rgba(0, 0, 0, 0.801);
+        }
 
         
     }
@@ -176,6 +183,14 @@ $link-hover: rgba(39, 174, 95, 0.904);
         border-radius: 3px;
         padding: 3% 10px;
         text-align: center;
+        transition: all .5s;
+        &:hover {
+            border: 1px solid rgba(255, 255, 255, 0.493);
+            color: rgb(39, 174, 95);
+            box-shadow: 0 0 4px 2px rgba(39, 174, 95, 0.322);
+            background-color: rgba(0, 0, 0, 0.801);
+
+        }
     }
 }
 
