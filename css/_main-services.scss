@@ -5,7 +5,7 @@
     h3 {
         text-align: center;
         font-size: 1.5rem;
-        border-bottom: 1px solid $burger-color;
+        border-bottom: 3px solid $burger-color;
         padding-bottom: 10px;
         max-width: 200px;
         margin: 0 auto;
@@ -25,7 +25,7 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        margin-top: 50px;
+        margin-top: 25px;
        
         
         .services-item {
@@ -37,10 +37,21 @@
             text-align: center;
             justify-content: center;
             font-size: 1rem;
+            span {
+                font-weight: 200;
+                
+            }
+           
       
             img {
-                max-width: 50px;
+                max-width: 60px;
+                transition: all 1s;
+                padding: 5px;
             }
+            img:hover {
+                transform: translateY(-1px);
+                box-shadow: 0 0 4px 2px rgba(39, 174, 95, 0.644);
+             }
         }
     }
 }

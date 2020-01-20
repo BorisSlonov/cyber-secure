@@ -1,6 +1,6 @@
 .footer {
     background-color: #1F1E1E;
-    padding: 25px 0;
+    padding: 25px 0 0;
 }
 .footer-container {
     display: flex;
@@ -36,6 +36,11 @@
     }
     .social {
         display: flex;
+        margin-bottom: -10px;
+        img {
+            width: 100%;
+            max-width: 25px;
+        }
         div:not(:last-child) {
             margin-right: 15px;
         }
