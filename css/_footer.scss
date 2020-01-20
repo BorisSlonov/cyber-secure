@@ -36,6 +36,11 @@
     }
     .social {
         display: flex;
+        margin-bottom: -10px;
+        img {
+            width: 100%;
+            max-width: 25px;
+        }
         div:not(:last-child) {
             margin-right: 15px;
         }
