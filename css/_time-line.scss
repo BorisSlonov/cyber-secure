@@ -1,15 +1,21 @@
 .time-line {
-    background-image: url(../img/green-bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+
+    background-color: #27AE60;
     width: 100%;
-    min-height: 250px;
+    margin-top: -240px;
 
     h2 {
         padding-top: 100px;
+        position: relative;
+        z-index: 5;
 
         span {
             border-bottom: 3px solid #494D55;
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 35px;
+            line-height: 41px;
         }
     }
 }
@@ -45,6 +51,7 @@
                 font-size: 3.5rem;
             }
         }
+
         span {
             display: inline-block;
             margin-top: 10px;
@@ -97,7 +104,7 @@
     }
 
     &__item:nth-child(2) {
-       
+
         position: relative;
         z-index: 2;
 
@@ -119,6 +126,7 @@
     &__item:nth-child(4) {
         position: relative;
         z-index: 2;
+
         &::after {
             content: '';
             position: absolute;
@@ -146,15 +154,16 @@
                 right: -115px;
             }
         }
+
         &__item:nth-child(2) {
-           
+
 
             &::after {
                 height: 160px;
                 width: 150px;
                 right: -115px;
                 top: -55px;
-                
+
             }
         }
 
@@ -227,6 +236,7 @@
         }
     }
 }
+
 @media (max-width: 850px) {
     .time-line-container {
         &__item:first-child {

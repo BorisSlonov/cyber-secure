@@ -2,6 +2,7 @@
     background-color: #1F1E1E;
     padding: 25px 0 0;
 }
+
 .footer-container {
     display: flex;
     justify-content: space-around;
@@ -10,53 +11,70 @@
     padding-bottom: 10px;
     max-width: 80%;
     margin: 0 auto;
+
     .logo {
         display: flex;
         align-items: center;
+
         div:first-child {
             img {
                 max-width: 110px;
                 margin-bottom: -5px;
-                
+
             }
         }
+
         div:last-child {
             display: inline-block;
             border-left: 1px solid rgba(39, 174, 95, 0.575);
             padding-left: 10px;
             margin-left: 10px;
             height: 40px;
+
             span {
                 display: inline-block;
                 margin-top: 10px;
                 color: rgba(255, 255, 255, 0.795);
             }
-           
+
         }
     }
+
     .social {
         display: flex;
         margin-bottom: -10px;
+
         img {
             width: 100%;
             max-width: 25px;
         }
+
         div:not(:last-child) {
             margin-right: 15px;
         }
     }
 }
+
 .footer-items {
     text-align: center;
+
     span {
         display: inline-block;
         margin: 15px 10px;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: rgba(255, 255, 255, 0.8);
     }
 }
+
 @media (max-width: 375px) {
     .footer-container {
         .social {
-           
+
             div:not(:last-child) {
                 margin-right: 5px;
             }

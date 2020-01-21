@@ -1,15 +1,31 @@
+
+
 .whyWe {
     background-image: url(../img/bg-green.png);
-    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
     color: #494D55;
     width: 100%;
+    position: relative;
+    z-index: 1;
+    &:after {
+        content: '';
+        position: absolute;
+        z-index: 2;
+        background-image: url(../img/green-down.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        left: -150px;
+        right: 0;
+        bottom: 0;
+        height: 200px;
+    }
 
     .container {
+
         padding: 75px 15px;
         position: relative;
         z-index: 20;
+       
 
 
 
@@ -17,14 +33,15 @@
 
 
         h2 {
-          margin-bottom: 15px;
+            margin-bottom: 15px;
 
             span {
                 border-bottom: 3px solid $burger-color;
-                font-weight: 400;
-                font-size: 2rem;
-            
-                line-height: 1.5;
+                font-family: Raleway;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 35px;
+                line-height: 41px;
             }
         }
     }
@@ -34,6 +51,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 150px;
 
 }
 
@@ -68,6 +86,7 @@
     &__text {
         flex-basis: 70%;
         margin: 15px;
+        padding-left: 30px;
 
         h3 {
             text-transform: uppercase;
@@ -79,6 +98,7 @@
             color: #000;
             max-width: 75%;
             font-size: 1.2rem;
+
         }
     }
 }
@@ -90,8 +110,11 @@
         text-align: center;
 
         &__text {
+            padding-left: 0;
+
             p {
                 max-width: 100%;
+
             }
         }
     }
