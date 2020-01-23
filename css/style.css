@@ -295,9 +295,6 @@ button {
 
 .logo-img {
   max-width: 160px;
-  width: 100%;
-  position: absolute;
-  top: 0;
   border-radius: 5px;
 }
 
@@ -419,9 +416,19 @@ button {
   background-color: rgba(0, 0, 0, 0.801);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 425px) {
   .header-btn-group {
-    margin-right: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-btn-group .signUp {
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 }
 
@@ -883,7 +890,7 @@ button {
 .offers-container__item p .cyber-secur__text {
   position: relative;
   display: inline-block;
-  margin-top: 25%;
+  margin-top: 15%;
   z-index: 30;
   color: #fff;
   font-family: Raleway;
@@ -893,6 +900,12 @@ button {
   line-height: 18px;
   text-align: center;
   padding: 0 10%;
+}
+
+.offers-container__item p .cyber-secur__text .border-green {
+  border-top: 3px solid #27ae5f;
+  display: inline-block;
+  padding-top: 50px;
 }
 
 .offers-container__item p__item:nth-child(2) p {
@@ -1622,13 +1635,13 @@ button {
 }
 
 .footer-container .logo div:first-child img {
-  max-width: 110px;
-  margin-bottom: -5px;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 0px;
 }
 
 .footer-container .logo div:last-child {
   display: inline-block;
-  border-left: 1px solid rgba(39, 174, 95, 0.575);
   padding-left: 10px;
   margin-left: 10px;
   height: 40px;
@@ -1649,7 +1662,7 @@ button {
 
 .footer-container .social img {
   width: 100%;
-  max-width: 25px;
+  max-width: 35px;
 }
 
 .footer-container .social div:not(:last-child) {
@@ -1669,6 +1682,18 @@ button {
   font-size: 16px;
   line-height: 19px;
   color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 425px) {
+  .footer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-container .social {
+    margin: 5px;
+  }
 }
 
 @media (max-width: 375px) {

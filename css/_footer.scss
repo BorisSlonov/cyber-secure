@@ -18,15 +18,16 @@
 
         div:first-child {
             img {
-                max-width: 110px;
-                margin-bottom: -5px;
+                width: 100%;
+                max-width: 300px;
+                margin-bottom: 0px;
 
             }
         }
 
         div:last-child {
             display: inline-block;
-            border-left: 1px solid rgba(39, 174, 95, 0.575);
+         
             padding-left: 10px;
             margin-left: 10px;
             height: 40px;
@@ -46,7 +47,7 @@
 
         img {
             width: 100%;
-            max-width: 25px;
+            max-width: 35px;
         }
 
         div:not(:last-child) {
@@ -70,7 +71,14 @@
         color: rgba(255, 255, 255, 0.8);
     }
 }
-
+@media (max-width: 425px) {
+    .footer-container {
+       flex-direction: column;
+       .social {
+           margin: 5px;
+       }
+    }
+}
 @media (max-width: 375px) {
     .footer-container {
         .social {
