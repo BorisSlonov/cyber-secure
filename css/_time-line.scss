@@ -22,7 +22,7 @@
 
 .time-line-container {
     display: flex;
-    padding-top: 100px;
+    padding-top: 110px;
     min-height: 400px;
     justify-content: space-between;
     align-items: center;
@@ -71,8 +71,8 @@
             background-image: url(../img/elipseDown.png);
             background-repeat: no-repeat;
             background-size: contain;
-            height: 160px;
-            width: 150px;
+            height: 150px;
+            width: 145px;
             right: -112px;
             transform: rotate(-15deg);
 
@@ -94,6 +94,7 @@
             height: 145px;
             width: 140px;
             right: -115px;
+            bottom: -2px;
             transform: rotate(-15deg);
 
         }
@@ -382,16 +383,16 @@
                 transform: rotate(48deg);
                 right: -20px;
                 top: 75px;
-                height: 90px;
-                width: 90px;
+                height: 100px;
+                width: 100px;
             }
         }
 
         &__item:nth-child(4) {
 
             &::after {
-                height: 80px;
-                width: 80px;
+                height: 90px;
+                width: 90px;
                 left: -20px;
                 top: 70px;
                 transform: rotate(135deg);
@@ -405,11 +406,11 @@
         &__item:first-child {
 
             &:after {
-                transform: rotate(45deg);
-                right: -15px;
+                transform: rotate(48deg);
+                right: -12px;
                 top: 65px;
-                height: 70px;
-                width: 70px;
+                height: 80px;
+                width: 75px;
             }
         }
 
@@ -419,8 +420,8 @@
                 height: 90px;
                 width: 90px;
                 left: -20px;
-                top: 80px;
-                transform: rotate(130deg);
+                top: 70px;
+                transform: rotate(135deg);
             }
         }
 
@@ -428,20 +429,20 @@
 
 
             &:after {
-                transform: rotate(45deg);
+                transform: rotate(48deg);
                 right: -20px;
                 top: 75px;
-                height: 70px;
-                width: 70px;
+                height: 80px;
+                width: 80px;
             }
         }
 
         &__item:nth-child(4) {
 
             &::after {
-                height: 60px;
-                width: 60px;
-                left: -15px;
+                height: 80px;
+                width: 80px;
+                left: -23px;
                 top: 80px;
                 transform: rotate(135deg);
             }

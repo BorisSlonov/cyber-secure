@@ -20,15 +20,21 @@
         content: '';
         position: absolute;
         z-index: 1;
-        height: 200px;
+        min-height: 420px;
         background-size: cover;
-        background-image: url(../img/whitebg.png);
+        background-image: url(../img/whitebg123.png);
         background-repeat: no-repeat;
-
-        bottom: 0;
+        bottom: -1px;
         left: 0;
         right: 0;
         width: 100%;
+    }
+}
+@media (max-width:740px) {
+    .offers {
+        &:after {
+            min-height: 150px;
+        }
     }
 }
 
